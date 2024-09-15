@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Register Here</h2>
+			<form onsubmit="return validation.js()">
+        </div>
+        <form action="index.html" class="form" id="form">
+            <div class="field">
+                <label >Username</label>
+                <input required type="text" placeholder="xyz" id="uname">
+                <span class="material-icons success"> check_circle</span>
+                <span class="material-icons error ">error</span>
+                <small>Error message</small>
+            </div>
+            <div class="field ">
+                <label>Email</label>
+                <input required type="email" placeholder="abc@gmail.com" id="email">
+                <span class="material-icons success "> check_circle</span>
+                <span class="material-icons error">error</span>
+                <small>Error message</small>
+            </div>
+			<div class="field ">
+                <label>phn</label>
+                <input required type="text" placeholder="phn" id="phn">
+                <span class="material-icons success "> check_circle</span>
+                <span class="material-icons error">error</span>
+                <small>Error message</small>
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input required type="password" placeholder="password" id="password">
+                <span class="material-icons success"> check_circle</span>
+                <span class="material-icons error">error</span>
+                <small>Error message</small>
+            </div>
+            <div class="field">
+                <label>Confirm Password</label>
+                <input  required type="password" placeholder="password" id="cpassword">
+                <span class="material-icons success"> check_circle</span>
+                <span class="material-icons error">error</span>
+                <small>Error message</small>
+            </div>
+            <div class="field">
+                <label>DOB</label>
+                <input required type="date" placeholder="dateofbirth" id="dateofbirth">
+                <span class="material-icons success"> check_circle</span>
+                <span class="material-icons error">error</span>
+                <small>Error message</small>
+            </div>
+            <div class="field">
+                <input required type="checkbox" id="tc" class="terms" >
+                <label>I agree to terms and conditions</label>               
+                <small>Error message</small>
+            </div>
+            <input type="submit" class="button"><centre>
+			</form>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
